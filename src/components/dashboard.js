@@ -1,0 +1,47 @@
+"use client";
+
+import React, { useEffect, useState } from "react";
+
+function Dashboard() {
+  const [userData, setUserData] = useState(null);
+
+  useEffect(() => {
+    // Simulate fetching user-specific data
+    const fetchData = async () => {
+      const response = await fetch("/api/user-data", {
+        headers: {
+          // Include any necessary headers, like authentication tokens
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+      });
+      const data = await response.json();
+      setUserData(data);
+    };
+
+    fetchData();
+  }, []);
+
+  return (
+    <div>
+      <nav>Navbar Here</nav>
+      <main>
+        {/* Static sections can be rendered directly */}
+        <section>Static Content Section</section>
+
+        {/* User-specific section */}
+        <section>
+          {userData ? (
+            <div>
+              {/* Render user-specific data here */}
+              <p>Welcome, {userData.name}</p>
+            </div>
+          ) : (
+            <p>Loading user data...</p>
+          )}
+        </section>
+      </main>
+    </div>
+  );
+}
+
+export default Dashboard;
