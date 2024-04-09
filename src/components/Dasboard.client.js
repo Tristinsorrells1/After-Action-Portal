@@ -22,14 +22,7 @@ function Dashboard() {
   }, []);
 
   return (
-    <div>
-      <nav>Navbar Here</nav>
-      <main>
-        {/* Static sections can be rendered directly */}
-        <section>Static Content Section</section>
-
-        {/* User-specific section */}
-        <section>
+    <div className="dynamic-dashboard-container">
           {userData ? (
             <div>
               {/* Render user-specific data here */}
@@ -38,8 +31,6 @@ function Dashboard() {
           ) : (
             <p>Loading user data...</p>
           )}
-        </section>
-      </main>
     </div>
   );
 }
