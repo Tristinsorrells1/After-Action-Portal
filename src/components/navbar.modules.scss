@@ -3,11 +3,6 @@ $background-blue: #31628d;
 $text-shadow: 0 0.5px rgb(0, 0, 0);
 $hover-color: #cae6ff;
 
-.nav-and-header-container {
-  height: 100%;
-  display: flex;
-}
-
 nav {
   display: flex;
   flex-direction: column;
@@ -17,25 +12,6 @@ nav {
   background-color: $background-blue;
   color: $white-text;
   font-weight: 600;
-}
-
-.nav-header {
-  width: 100%;
-  background-color: white;
-}
-
-.header-divider {
-  width: 97%;
-  border-bottom: 3px solid #f8f4f4;
-  display: block;
-  margin: 0 auto;
-}
-
-.welcome-text {
-  font-size: 20px;
-  text-indent: 20px;
-  font-weight: 550;
-  margin: 10px;
 }
 
 .navbar-sections-container {

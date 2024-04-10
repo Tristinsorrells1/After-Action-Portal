@@ -4,7 +4,6 @@ import styles from "./navbar.modules.scss";
 
 function Navbar() {
   return (
-    <section className="nav-and-header-container">
       <nav>
         <Link href="/" style={{ position: "relative", width: "95%", height: "50px", margin: "10px auto" }}>
           <Image
@@ -55,11 +54,6 @@ function Navbar() {
           </li>
         </div>
       </nav>
-      <div className="nav-header">
-        <h2 className="welcome-text">Welcome Chief</h2>
-        <span className="header-divider"></span>
-      </div>
-    </section>
   );
 }
 
