@@ -1,0 +1,63 @@
+$white-text: #c1cfdd;
+$background-blue: #31628d;
+$text-shadow: 0 0.5px rgb(0, 0, 0);
+
+nav {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  width: 30%;
+  background-color: $background-blue;
+  color: $white-text;
+  font-weight: 600;
+}
+
+.navbar-sections-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.navbar-divider {
+  border-bottom: 0.25px solid $white-text;
+  width: 90%;
+  margin: 0 auto 10px auto;
+}
+
+.navbar-section > * {
+  padding: 5px 0;
+}
+
+.navbar-li {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navbar-li > * {
+  position: relative;
+  left: -8px;
+}
+
+.navbar-section-header {
+  font-size: 10px;
+  text-indent: 10px;
+  text-shadow: $text-shadow;
+}
+
+.navbar-text {
+  font-size: 10px;
+  text-decoration: none;
+  color: $white-text;
+}
+
+
+
+nav {
+  height: 100%;
+}
