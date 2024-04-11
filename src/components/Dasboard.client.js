@@ -18,7 +18,7 @@ function Dashboard() {
       setUserData(data);
     };
 
-    fetchData();
+    // fetchData();
   }, []);
 
   return (
