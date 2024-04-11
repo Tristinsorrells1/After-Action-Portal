@@ -13,7 +13,9 @@ export default function RootLayout({ children }) {
   const router = useRouter();
 
   useEffect(() => {
+    console.log(1)
     const unsubscribe = onAuthStateChanged(auth, (user) => {
+      console.log(user)
       if (user) {
         const uid = user.uid;
         // If not on dashboard, redirect to dashboard

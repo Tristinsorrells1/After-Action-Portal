@@ -39,7 +39,8 @@ nav {
   padding: 5px;
 }
 
-.navbar-li > * {
+.navbar-li > *,
+.navbar-li {
   position: relative;
   left: -8px;
 }
